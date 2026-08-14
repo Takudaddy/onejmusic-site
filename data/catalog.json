@@ -1,0 +1,50 @@
+{
+  "artists": [
+    {
+      "id": "biteul",
+      "name": "BiTEUL",
+      "description": "A music project presented by ONE-J.",
+      "releases": [
+        {
+          "slug": "the-color-of-breeze",
+          "title": "The Color of Breeze",
+          "year": "2026",
+          "status": "Live",
+          "cover": "",
+          "links": {}
+        },
+        {
+          "slug": "conversation",
+          "title": "Conversation",
+          "year": "2026",
+          "status": "Coming Soon",
+          "cover": "",
+          "links": {}
+        }
+      ]
+    },
+    {
+      "id": "lazypub",
+      "name": "LazyPub",
+      "description": "A music project presented by ONE-J.",
+      "releases": [
+        {
+          "slug": "little-step",
+          "title": "Little Step",
+          "year": "2026",
+          "status": "Coming Soon",
+          "cover": "",
+          "links": {}
+        },
+        {
+          "slug": "identity",
+          "title": "Identity",
+          "year": "2026",
+          "status": "Coming Soon",
+          "cover": "",
+          "links": {}
+        }
+      ]
+    }
+  ]
+}

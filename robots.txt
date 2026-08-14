@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://onejmusic.com/sitemap.xml
