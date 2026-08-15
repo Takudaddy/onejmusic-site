@@ -142,3 +142,38 @@ footer{padding:22px 18px;gap:18px;font-size:10px}
     gap:16px;
   }
 }
+
+
+/* Header official channels */
+.nav-social{
+  font-weight:600;
+}
+.mobile-social{
+  display:none;
+}
+
+@media(max-width:640px){
+  .nav{
+    gap:12px;
+  }
+  .nav-social{
+    font-weight:700;
+  }
+  .desktop-social{
+    display:none;
+  }
+  .mobile-social{
+    display:inline;
+  }
+}
+
+@media(max-width:390px){
+  .site-header{
+    padding-left:14px;
+    padding-right:14px;
+  }
+  .nav{
+    gap:9px;
+    font-size:10px;
+  }
+}
