@@ -103,3 +103,19 @@ footer{padding:22px 18px;gap:18px;font-size:10px}
     gap:24px 9px;
   }
 }
+
+/* Hero layout after removing the large ONE-J title */
+.hero-inner{
+  padding-top:82px;
+  padding-bottom:64px;
+}
+.hero-subtitle{
+  margin-top:0;
+}
+
+@media(max-width:640px){
+  .hero-inner{
+    padding-top:64px;
+    padding-bottom:48px;
+  }
+}
