@@ -72,4 +72,4 @@ footer{padding:22px 18px;gap:18px;font-size:10px}
 .hero-logo{font-size:clamp(49px,16.4vw,63px)}
 .hero-actions .button{padding-left:11px;padding-right:11px}
 .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 9px}
-}.grid{grid-template-columns:1fr}}
+}
