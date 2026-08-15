@@ -3,46 +3,46 @@
     {
       "id": "biteul",
       "name": "BiTEUL",
-      "description": "A music project presented by ONE-J.",
+      "spotify": "https://open.spotify.com/artist/3szgvI3Jg63UsOSBtju4Kv",
       "releases": [
         {
           "slug": "the-color-of-breeze",
           "title": "The Color of Breeze",
           "year": "2026",
-          "status": "Live",
-          "cover": "",
-          "links": {}
+          "status": "Out Now",
+          "cover": "assets/covers/biteul-the-color-of-breeze.jpg",
+          "spotify": "https://open.spotify.com/album/6RFmeZIzUOFUOcLGz1wFMx"
         },
         {
           "slug": "conversation",
           "title": "Conversation",
           "year": "2026",
           "status": "Coming Soon",
-          "cover": "",
-          "links": {}
+          "cover": "assets/covers/biteul-conversation.png",
+          "spotify": ""
         }
       ]
     },
     {
       "id": "lazypub",
       "name": "LazyPub",
-      "description": "A music project presented by ONE-J.",
+      "spotify": "",
       "releases": [
         {
           "slug": "little-step",
           "title": "Little Step",
           "year": "2026",
           "status": "Coming Soon",
-          "cover": "",
-          "links": {}
+          "cover": "assets/covers/lazypub-little-step.png",
+          "spotify": ""
         },
         {
           "slug": "identity",
           "title": "Identity",
           "year": "2026",
           "status": "Coming Soon",
-          "cover": "",
-          "links": {}
+          "cover": "assets/covers/lazypub-identity.png",
+          "spotify": ""
         }
       ]
     }
