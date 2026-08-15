@@ -177,3 +177,11 @@ footer{padding:22px 18px;gap:18px;font-size:10px}
     font-size:10px;
   }
 }
+
+
+/* Sticky site header */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
