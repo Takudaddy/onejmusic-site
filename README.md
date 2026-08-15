@@ -11,3 +11,11 @@ Responsive redesign for onejmusic.com.
 - Existing SEO pages, sitemap, robots.txt, CNAME and Spotify links preserved
 
 Upload the contents of this folder to the root of the existing GitHub Pages repository.
+
+
+## v6 mobile fix
+- Hero wordmark resized for phone widths
+- Separator changed to a shorter minus glyph and independently spaced
+- Navigation tightened on small screens
+- Hero copy/buttons and background repositioned for iPhone-sized layouts
+- Two-column release grid retained on phones
