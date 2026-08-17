@@ -185,3 +185,7 @@ footer{padding:22px 18px;gap:18px;font-size:10px}
   top:0;
   z-index:1000;
 }
+
+/* Korean search aliases */
+.artist-ko{font-size:.58em;font-weight:500;opacity:.58;margin-left:.28em;vertical-align:.12em}
+.creator-ko{display:block;margin-top:.28em;font-size:.24em;line-height:1;letter-spacing:0;opacity:.58;font-weight:500}
