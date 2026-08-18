@@ -3,12 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>One-J Music | BiTEUL 비틀 · LazyPub 레이지펍 · 원재</title>
-  <meta name="description" content="Music and content by One-J (원재). Discover BiTEUL (비틀), LazyPub (레이지펍), new releases, videos and other projects by One-J.">
+  <title>One-J Music | BiTEUL 비틀 · LazyPub 레이지펍 · Cold Jane · 원재</title>
+  <meta name="description" content="Music and content by One-J (원재). Discover BiTEUL (비틀), LazyPub (레이지펍), Cold Jane, new releases and projects including Cold Jane’s debut album Out of Control.">
   <link rel="canonical" href="https://onejmusic.com/">
   <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"One-J","alternateName":["ONE-J","원재"],"url":"https://onejmusic.com/","sameAs":["https://www.instagram.com/onejmusic","https://www.youtube.com/@onej_music"]}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://onejmusic.com/#website",
+      "url": "https://onejmusic.com/",
+      "name": "ONE-J Music",
+      "publisher": {
+        "@id": "https://onejmusic.com/#one-j"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://onejmusic.com/#one-j",
+      "name": "One-J",
+      "alternateName": [
+        "ONE-J",
+        "원재"
+      ],
+      "url": "https://onejmusic.com/",
+      "sameAs": [
+        "https://www.instagram.com/onejmusic",
+        "https://www.youtube.com/@onej_music"
+      ]
+    },
+    {
+      "@type": "MusicGroup",
+      "@id": "https://onejmusic.com/artists/biteul/#artist",
+      "name": "BiTEUL",
+      "alternateName": "비틀",
+      "url": "https://onejmusic.com/artists/biteul/"
+    },
+    {
+      "@type": "MusicGroup",
+      "@id": "https://onejmusic.com/artists/lazypub/#artist",
+      "name": "LazyPub",
+      "alternateName": "레이지펍",
+      "url": "https://onejmusic.com/artists/lazypub/"
+    },
+    {
+      "@type": "MusicGroup",
+      "@id": "https://onejmusic.com/artists/cold-jane/#artist",
+      "name": "Cold Jane",
+      "url": "https://onejmusic.com/artists/cold-jane/",
+      "subjectOf": {
+        "@id": "https://onejmusic.com/#out-of-control"
+      }
+    },
+    {
+      "@type": "MusicAlbum",
+      "@id": "https://onejmusic.com/#out-of-control",
+      "name": "Out of Control",
+      "albumProductionType": "https://schema.org/StudioAlbum",
+      "byArtist": {
+        "@id": "https://onejmusic.com/artists/cold-jane/#artist"
+      },
+      "image": "https://onejmusic.com/assets/covers/cold-jane-out-of-control.jpg",
+      "description": "Out of Control is the upcoming debut album by Cold Jane."
+    }
+  ]
+}
   </script>
 </head>
 <body>
@@ -29,7 +90,7 @@
     <div class="hero-inner">
       <p class="hero-subtitle">Music and content by One-J.</p>
       <span class="hero-rule" aria-hidden="true"></span>
-      <p class="hero-lead">Different artists, different sounds, different stories.<br>BiTEUL (비틀), LazyPub (레이지펍), and more.</p>
+      <p class="hero-lead">Different artists, different sounds, different stories.<br>BiTEUL (비틀), LazyPub (레이지펍), Cold Jane, and more.</p>
       <div class="hero-actions">
         <a class="button button-dark" href="#releases">Latest Releases</a>
         <a class="button" href="#about">About ONE-J</a>
@@ -42,7 +103,7 @@
       <div>
         <span class="kicker">Latest releases</span>
         <h2>New music, every week.</h2>
-        <p>Four projects. Different colors. One sound that lasts.</p>
+        <p>Five projects. Different colors. One sound that lasts.</p>
       </div>
     </div>
 
@@ -86,6 +147,16 @@
         <p>LazyPub · Vol. 2</p>
         <span class="card-button disabled">Coming Soon</span>
       </article>
+
+      <article class="release">
+        <a class="cover-link" href="/artists/cold-jane/">
+          <img class="cover" src="/assets/covers/cold-jane-out-of-control.jpg" alt="Cold Jane Out of Control debut album cover">
+          <span class="status">Coming Soon</span>
+        </a>
+        <h3>Out of Control</h3>
+        <p>Cold Jane · Vol. 1</p>
+        <span class="card-button disabled">Coming Soon</span>
+      </article>
     </div>
   </section>
 
@@ -101,13 +172,17 @@
       <div><h3>LazyPub <span class="artist-ko">레이지펍</span></h3><p>Laid-back grooves, jazz colors and late-night listening without the rush.</p></div>
       <a class="button" href="/artists/lazypub/">View artist</a>
     </div>
+    <div class="artist-row">
+      <div><h3>Cold Jane</h3><p>Atmospheric alternative music shaped by contrast, tension and late-night color.</p></div>
+      <a class="button" href="/artists/cold-jane/">View artist</a>
+    </div>
   </section>
 
   <section class="section about-section" id="about">
     <span class="kicker">About</span>
     <div class="about-grid">
       <h2>ONE-J <span class="creator-ko">원재</span></h2>
-      <p>Music and content created and produced by One-J. From BiTEUL and LazyPub to new music, animation and other projects.</p>
+      <p>Music and content created and produced by One-J. From BiTEUL, LazyPub and Cold Jane to new music, animation and other projects.</p>
     </div>
   </section>
 </main>
