@@ -1,1 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://onejmusic.com/</loc></url><url><loc>https://onejmusic.com/artists/biteul/</loc></url><url><loc>https://onejmusic.com/artists/lazypub/</loc></url><url><loc>https://onejmusic.com/releases/the-color-of-breeze/</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://onejmusic.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/mastering/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/artists/biteul/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/artists/lazypub/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/artists/cold-jane/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/releases/the-color-of-breeze/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/releases/conversation/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/releases/autumn/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/releases/little-step/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/releases/identity/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/releases/easy-evening/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/releases/out-of-control/</loc>
+  </url>
+
+  <url>
+    <loc>https://onejmusic.com/releases/vanished-dream/</loc>
+  </url>
+
+</urlset>
