@@ -1,0 +1,43 @@
+/* ONE-J brand accents — loaded after style.css. */
+:root { --onej-blue:#192F4B; --onej-yellow:#F2C94C; }
+/* Preserve original warm ivory and dark green ink. */
+.brand-mark,.hero-mark { color:var(--onej-yellow); text-shadow:0 0 1px rgba(25,47,75,.4); }
+.site-header { border-bottom-color:rgba(25,47,75,.23); }
+.nav a:hover,.nav a:focus-visible { color:var(--onej-blue); opacity:1; }
+.hero-rule { border-color:var(--onej-yellow); width:48px; }
+.hero-subtitle { color:var(--onej-blue); }
+.button-dark { background:var(--onej-blue); border-color:var(--onej-blue); color:#fff; }
+.button-dark:hover,.button-dark:focus-visible { background:#112238; border-color:#112238; color:var(--onej-yellow); }
+.button:not(.button-dark):not(.disabled):hover,.card-button:hover { border-color:var(--onej-blue); background:var(--onej-blue); color:var(--onej-yellow); }
+.kicker { color:var(--onej-blue); }
+.section-heading h2 { color:var(--ink); }
+.artist-row:hover h3,.release-card:hover h3 { color:var(--onej-blue); }
+/* Homepage: one contained dark-blue panel rather than a full-site recolor. */
+body:has(> main > .mastering-section) .mastering-section { background:var(--onej-blue); color:#fff; border-top:0; border-radius:12px; margin-top:26px; margin-bottom:28px; width:min(calc(100% - 48px),1392px); }
+body:has(> main > .mastering-section) .mastering-section .kicker { color:var(--onej-yellow); }
+body:has(> main > .mastering-section) .mastering-section h2 { color:#fff; }
+body:has(> main > .mastering-section) .mastering-section .button-dark { background:var(--onej-yellow); border-color:var(--onej-yellow); color:var(--onej-blue); }
+body:has(> main > .mastering-section) .mastering-section .button-dark:hover { background:#ffdc67; color:#112238; }
+/* Master Taku hero / section details. */
+.mastering-page .mastering-hero .kicker { color:var(--onej-blue); }
+.mastering-page .mastering-hero h1 { color:var(--onej-blue); }
+.mastering-page .mastering-step > span { color:var(--onej-blue); }
+.mastering-page .mastering-coming-soon { border-color:rgba(25,47,75,.35); }
+.mastering-page .workstation-language { border-color:rgba(25,47,75,.27); }
+.mastering-page .workstation-language h3 { color:var(--onej-blue); }
+.mastering-page .workstation-tag { color:var(--onej-blue); opacity:1; }
+/* Before / After — native audio players remain intact and functional. */
+.mastering-compare .audio-comparison { gap:20px; }
+.mastering-compare .audio-sample { border:1px solid #cbd2d8; background:rgba(255,255,255,.17); border-radius:10px; }
+.mastering-compare .audio-sample h3 { color:var(--onej-blue); }
+.mastering-compare .audio-sample .audio-duration { border-color:#cbd2d8; color:var(--onej-blue); }
+.mastering-compare .audio-sample:nth-child(2) { border:2px solid var(--onej-blue); background:rgba(25,47,75,.035); padding:31px; }
+.mastering-compare .audio-sample:nth-child(2) .kicker { color:var(--onej-blue); }
+.mastering-compare .audio-sample:nth-child(2) .audio-duration { background:var(--onej-yellow); color:var(--onej-blue); border-color:var(--onej-yellow); }
+/* Native audio controls have browser-dependent internal styling. Accent where supported. */
+.mastering-compare audio { accent-color:var(--onej-blue); }
+:focus-visible { outline:2px solid var(--onej-blue); outline-offset:4px; }
+@media(max-width:640px) {
+ body:has(> main > .mastering-section) .mastering-section { width:calc(100% - 28px); border-radius:9px; margin-top:14px; margin-bottom:14px; }
+ .mastering-compare .audio-sample:nth-child(2) { padding:23px 19px; }
+}
