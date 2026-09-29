@@ -1,26 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>One-J Music | BiTEUL 비틀 · LazyPub 레이지펍 · Cold Jane 콜드제인 · Simone D.B · 원재</title>
+
+  <meta name="description" content="Music and content by One-J (원재). Discover BiTEUL (비틀), LazyPub (레이지펍), Cold Jane (콜드제인), Simone D.B (사이먼 D.B), Master Taku free online mastering and more.">
+
+  <link rel="canonical" href="https://onejmusic.com/">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/onej-theme.css">
+
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMCMVTWLT6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('c
-         onfig', 'G-FMCMVTWLT6');
+    gtag('config', 'G-FMCMVTWLT6');
   </script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>One-J Music | BiTEUL 비틀 · LazyPub 레이지펍 · Cold Jane 콜드제인 · Simone D.B 사이먼 D.B · 원재</title>
-
-  <meta name="description" content="Music and content by One-J (원재). Discover BiTEUL (비틀), LazyPub (레이지펍), Cold Jane (콜드제인), Simone D.B (사이먼 D.B), Master Taku free online mastering and more.">
-
-  <link rel="canonical" href="https://onejmusic.com/">
-  <link rel="stylesheet" href="/style.css">
+</head>
 
 <body>
 
@@ -34,7 +34,7 @@
   <nav class="nav">
     <a href="#releases">Releases</a>
     <a href="#artists">Artists</a>
-    <a href="/mastering/">Mastering</a>
+    <a href="/mastering/index.html">Mastering</a>
     <a href="#about">About</a>
 
     <a
@@ -78,6 +78,7 @@
       <div class="hero-actions">
         <a class="button button-dark" href="#releases">Latest Releases</a>
         <a class="button" href="#about">About ONE-J</a>
+        <a class="button hero-mastering-link" href="/mastering/index.html">Master Taku ↗</a>
       </div>
     </div>
   </section>
@@ -96,18 +97,14 @@
     <div class="release-grid">
 
       <!-- Upcoming release: no Spotify URL until the single is released -->
-      <article class="release">
-        <a class="cover-link" href="/releases/nice-picture/">
-          <img
-            class="cover"
-            src="/assets/covers/simone-db-nice-picture.png"
-            alt="Simone D.B Nice Picture single cover"
-          >
+      <article class="release" id="nice-picture">
+        <div class="cover-link">
+          <img class="cover" src="/assets/covers/simone-db-nice-picture.png" alt="Simone D.B Nice Picture single cover">
           <span class="status">Coming Soon</span>
-        </a>
-      
+        </div>
         <h3>Nice Picture</h3>
-        <p>Simone D.B · Debut Single</p>
+        <p>Simone D.B · Single</p>
+        <span class="card-button" aria-label="Nice Picture coming soon">Coming Soon</span>
       </article>
 
 
@@ -270,7 +267,7 @@
         </p>
       </div>
 
-      <a class="button button-dark" href="/mastering/">
+      <a class="button button-dark" href="/mastering/index.html">
         Try Master Taku
       </a>
 
@@ -294,7 +291,7 @@
         From BiTEUL, LazyPub, Cold Jane and Simone D.B to new music,
         animation and other projects.
         <br><br>
-        Contact :
+        Contact ·
         <a href="mailto:contact@onejmusic.com">contact@onejmusic.com</a>
       </p>
     </div>
@@ -357,7 +354,7 @@
       gtag('event', 'artist_click', { artist_path: href });
     }
 
-    if (href === '/mastering/') {
+    if (href === '/mastering/' || href === '/mastering/index.html') {
       gtag('event', 'mastering_click', { source_page: 'home' });
     }
   });
