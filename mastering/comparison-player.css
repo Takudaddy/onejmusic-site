@@ -1,0 +1,18 @@
+/* Only the player is changed: existing card backgrounds and borders are untouched. */
+.mastering-compare .comparison-player {display:flex;align-items:center;gap:12px;width:100%;min-width:0;height:48px;padding:7px 12px;border-radius:999px;background:#e9eae8;color:#101b19}
+.mastering-compare .audio-sample:nth-child(2) .comparison-player {background:#101b19;color:#fff}
+.mastering-compare .comparison-play,.mastering-compare .comparison-mute {border:0;cursor:pointer;flex:none;display:grid;place-items:center;background:transparent;color:inherit;padding:0}
+.mastering-compare .comparison-play {width:30px;height:30px;border-radius:50%}
+.mastering-compare .audio-sample:nth-child(2) .comparison-play {background:#f2c94c;color:#101b19}
+.mastering-compare .comparison-play svg {width:17px;height:17px;fill:currentColor}
+.mastering-compare .comparison-play .icon-pause {display:none}
+.mastering-compare .comparison-play[aria-pressed="true"] .icon-play {display:none}
+.mastering-compare .comparison-play[aria-pressed="true"] .icon-pause {display:block}
+.mastering-compare .comparison-time {font-size:11px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.mastering-compare .comparison-seek {flex:1;min-width:30px}
+.mastering-compare .comparison-mute svg {width:18px;height:18px}
+.mastering-compare .comparison-volume {width:50px;flex:none}
+.mastering-compare .comparison-seek,.mastering-compare .comparison-volume {height:4px;cursor:pointer;accent-color:#101b19}
+.mastering-compare .audio-sample:nth-child(2) .comparison-seek,.mastering-compare .audio-sample:nth-child(2) .comparison-volume {accent-color:#f2c94c}
+.mastering-compare .comparison-player input:focus-visible,.mastering-compare .comparison-player button:focus-visible {outline:2px solid #e6b83d;outline-offset:3px}
+@media(max-width:560px) {.mastering-compare .comparison-player {gap:8px;padding:6px 9px}.mastering-compare .comparison-volume {display:none}.mastering-compare .comparison-time {font-size:10px}}
