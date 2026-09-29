@@ -73,3 +73,34 @@ body:has(> main > .mastering-section) .mastering-section .button-dark:hover { ba
 .hero-mastering-link { border-color: var(--onej-blue); color: var(--onej-blue); }
 .hero-mastering-link:hover { background: var(--onej-blue); color: var(--onej-yellow); }
 .hero::after, .hero-art { pointer-events: none; }
+
+/* ONE-J 로고 색상 통일 */
+.brand .brand-mark {
+    color: #101B19 !important;
+}
+
+/* Master Taku hero */
+.mastering-hero h1 {
+  color: #101B19;
+}
+
+.mastering-hero .kicker {
+  color: #101B19;
+}
+
+.mastering-hero .kicker::before {
+  background: #E6B83D;
+}
+
+.mastering-hero .button-dark {
+  background: #101B19;
+  color: #fff;
+  border-color: #101B19;
+}
+
+.mastering-hero .button:not(.button-dark) {
+  background: transparent;
+  color: #101B19;
+  border-color: #101B19;
+}
+
