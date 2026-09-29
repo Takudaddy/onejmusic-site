@@ -104,3 +104,20 @@ body:has(> main > .mastering-section) .mastering-section .button-dark:hover { ba
   border-color: #101B19;
 }
 
+/* Master Taku - Black */
+.mastering-hero h1,
+.mastering-hero .kicker {
+    color: #101B19 !important;
+}
+
+.mastering-hero .button-dark {
+    background: #101B19 !important;
+    border-color: #101B19 !important;
+    color: #FFFFFF !important;
+}
+
+.mastering-hero .button:not(.button-dark) {
+    background: transparent !important;
+    border-color: #101B19 !important;
+    color: #101B19 !important;
+}
