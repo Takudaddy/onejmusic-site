@@ -1114,3 +1114,34 @@ footer{
   }
 
 }
+/* Shared header for artist and release detail pages */
+body > header:not(.site-header) {
+  min-height:78px;
+  padding:0 clamp(28px,3.6vw,58px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  border-bottom:1px solid var(--line);
+  background:rgba(245,240,230,.96);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+body > header:not(.site-header) .nav {
+  display:flex;
+  align-items:center;
+  gap:38px;
+}
+@media(max-width:640px) {
+  body > header:not(.site-header) {
+    min-height:64px;
+    padding:0 14px;
+    gap:12px;
+  }
+  body > header:not(.site-header) .nav {gap:12px;}
+}
+@media(max-width:390px) {
+  body > header:not(.site-header) {padding:0 10px;}
+  body > header:not(.site-header) .nav {gap:7px;}
+}
