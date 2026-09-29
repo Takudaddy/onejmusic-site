@@ -1,0 +1,18 @@
+/* Master Taku workstation showcase — scoped to /mastering/ */
+.workstation-section { padding-bottom: clamp(70px, 9vw, 140px); }
+.workstation-intro { align-items: center; gap: 28px; }
+.workstation-intro > div { max-width: 760px; }
+.workstation-formats { margin-top: 16px; font-size: .87rem; opacity: .72; line-height: 1.7; }
+.workstation-language-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px; margin-top: 42px; }
+.workstation-language { min-width: 0; padding: clamp(16px,2vw,30px); border: 1px solid rgba(80,80,80,.2); border-radius: 14px; background: rgba(128,128,128,.035); }
+.workstation-language-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
+.workstation-language-heading h3 { font-size: clamp(1.45rem,2.5vw,2rem); margin: 8px 0 0; }
+.workstation-tag { border: 1px solid currentColor; border-radius: 30px; padding: 5px 10px; font-size: .69rem; opacity: .6; }
+.workstation-language > p { min-height: 4.5em; line-height: 1.7; margin: 18px 0 22px; }
+.workstation-shot { margin: 0 0 22px; }
+.workstation-shot a { display: block; overflow: hidden; border: 1px solid rgba(120,120,120,.35); border-radius: 8px; background: #111; }
+.workstation-shot img { display: block; width: 100%; height: auto; transition: transform .2s ease; }
+.workstation-shot a:hover img { transform: scale(1.012); }
+.workstation-shot figcaption { margin-top: 9px; font-size: .78rem; opacity: .7; }
+.workstation-note { font-size: .8rem; opacity: .65; margin-top: 16px; }
+@media(max-width: 800px) { .workstation-language-grid { grid-template-columns: 1fr; } .workstation-language > p { min-height: 0; } }
