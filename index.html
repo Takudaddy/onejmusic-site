@@ -4,12 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>One-J Music | BiTEUL 비틀 · LazyPub 레이지펍 · Cold Jane 콜드제인 · 원재</title>
+  <title>One-J Music | BiTEUL 비틀 · LazyPub 레이지펍 · Cold Jane 콜드제인 · Simone D.B 사이먼 D.B · 원재</title>
 
-  <meta name="description" content="Music and content by One-J (원재). Discover BiTEUL (비틀), LazyPub (레이지펍), Cold Jane (콜드제인), Master Taku free online mastering and more.">
+  <meta name="description" content="Music and content by One-J (원재). Discover BiTEUL (비틀), LazyPub (레이지펍), Cold Jane (콜드제인), Simone D.B (사이먼 D.B), Master Taku free online mastering and more.">
 
   <link rel="canonical" href="https://onejmusic.com/">
   <link rel="stylesheet" href="/style.css">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4PC3J7R5RD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4PC3J7R5RD');
+  </script>
 </head>
 
 <body>
@@ -62,7 +71,7 @@
 
       <p class="hero-lead">
         Different artists, different sounds, different stories.<br>
-        BiTEUL (비틀), LazyPub (레이지펍), Cold Jane (콜드제인), and more.
+        BiTEUL (비틀), LazyPub (레이지펍), Cold Jane (콜드제인), Simone D.B, and more.
       </p>
 
       <div class="hero-actions">
@@ -79,11 +88,23 @@
       <div>
         <span class="kicker">Latest releases</span>
         <h2>New music, every week.</h2>
-        <p>Eight projects. Different colors. One sound that lasts.</p>
+        <p>Eight releases and one upcoming single. Different colors. One sound that lasts.</p>
       </div>
     </div>
 
     <div class="release-grid">
+
+      <!-- Upcoming release: no Spotify URL until the single is released -->
+      <article class="release" id="nice-picture">
+        <div class="cover-link">
+          <img class="cover" src="/assets/covers/simone-db-nice-picture.png" alt="Simone D.B Nice Picture single cover">
+          <span class="status">Coming Soon</span>
+        </div>
+        <h3>Nice Picture</h3>
+        <p>Simone D.B · Single</p>
+        <span class="card-button" aria-label="Nice Picture coming soon">Coming Soon</span>
+      </article>
+
 
       <article class="release">
         <a class="cover-link" href="/releases/autumn/">
@@ -209,6 +230,14 @@
       <a class="button" href="/artists/cold-jane/">View artist</a>
     </div>
 
+    <div class="artist-row" id="simone-db">
+      <div>
+        <h3>Simone D.B</h3>
+        <p>Contemporary underground hip-hop. Raw, rhythm-first sound with dry, understated rap. Debut single Nice Picture coming soon.</p>
+      </div>
+      <a class="button" href="#nice-picture">Upcoming single</a>
+    </div>
+
   </section>
 
 
@@ -257,7 +286,7 @@
 
       <p>
         Music and content created and produced by One-J.
-        From BiTEUL, LazyPub and Cold Jane to new music,
+        From BiTEUL, LazyPub, Cold Jane and Simone D.B to new music,
         animation and other projects.
         <br><br>
         Contact ·
@@ -297,6 +326,37 @@
   </div>
 
 </footer>
+
+<!-- ONE-J Music custom click events -->
+<script>
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('a[href]');
+    if (!link || typeof gtag !== 'function') return;
+
+    const href = link.getAttribute('href');
+    const release = link.closest('.release');
+
+    if (release) {
+      const album = release.querySelector('h3')?.textContent.trim();
+      const artist = release.querySelector('p')?.textContent.split('·')[0].trim();
+
+      gtag('event', 'album_click', {
+        album_name: album,
+        artist_name: artist,
+        destination: href,
+        click_type: link.classList.contains('card-button') ? 'spotify' : 'album_page'
+      });
+    }
+
+    if (href.startsWith('/artists/')) {
+      gtag('event', 'artist_click', { artist_path: href });
+    }
+
+    if (href === '/mastering/') {
+      gtag('event', 'mastering_click', { source_page: 'home' });
+    }
+  });
+</script>
 
 </body>
 </html>
